@@ -18,7 +18,7 @@ Experiment Design
 Group	Description
 Control (A)	Existing 5-page application
 Treatment (B)	Simplified 3-page application
-Traffic split: 50% / 50% — each version receives 15,000 users.
+Traffic split: 50% / 50% - each version receives 15,000 users.
 Metrics
 Primary Metric
 Application Completion Rate
@@ -34,11 +34,11 @@ Customer Complaint Rate	Ensure customer experience remains positive
 Application Error Rate	Verify technical stability
 > This case study evaluates the **Fraud Rate** guardrail in detail.
 Data
-Primary Metric — Applications
+Primary Metric - Applications
 Version	Started Applications	Completed Applications
 A (Control)	15,000	1,800
 B (Treatment)	15,000	2,040
-Guardrail Metric — Fraud (post-investigation)
+Guardrail Metric - Fraud (post-investigation)
 Version	Fraudulent Applications
 A (Control)	18
 B (Treatment)	25
@@ -59,7 +59,7 @@ Pooled proportion: p̂ = (1,800 + 2,040) / (15,000 + 15,000) ≈ 0.128
 Standard error computed from the pooled proportion across both groups
 Z-score: Z = 4.15
 Critical value (95% confidence, one-tailed): 1.645
-Since 4.15 > 1.645, we reject H₀ — the increase in completion rate is statistically significant.
+Since 4.15 > 1.645, we reject H₀ - the increase in completion rate is statistically significant.
 Guardrail Metric: Fraud Rate
 ```
 Fraud Rate = Fraudulent Applications / Completed Applications
@@ -109,8 +109,8 @@ ab-testing-credit-card/
 Reproducing the Analysis
 ```bash
 # 1. Clone the repo
-git clone https://github.com/<your-username>/ab-testing-credit-card.git
-cd ab-testing-credit-card
+git clone https://github.com/dubey01aman/AB-Testing-Credit-Card.git
+cd AB-Testing-Credit-Card
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -120,8 +120,8 @@ python scripts/ab_test_analysis.py
 ```
 The script prints the completion rate, lift, Z-score/p-value, and fraud-rate comparison, and checks both against the stated business decision rules (95% confidence, 1.5% fraud ceiling).
 Key Takeaways
-A primary metric (conversion) should almost never be evaluated in isolation — pair it with guardrail metrics that protect against unintended harm (here, fraud).
-Statistical significance (Z = 4.15) answers "is the effect real?" — it does not answer "should we ship it?". That second question requires a business threshold (fraud < 1.5%) decided in advance.
+A primary metric (conversion) should almost never be evaluated in isolation - pair it with guardrail metrics that protect against unintended harm (here, fraud).
+Statistical significance (Z = 4.15) answers "is the effect real?" - it does not answer "should we ship it?". That second question requires a business threshold (fraud < 1.5%) decided in advance.
 Pre-registering guardrail thresholds before running the experiment avoids post-hoc rationalization when a metric moves in the "wrong" direction.
 License
 This project is released under the MIT License. The scenario and figures are illustrative/synthetic and created for educational purposes.
