@@ -16,7 +16,7 @@ Business Objective
 > Increase completed credit card applications without increasing fraud risk.
 Experiment Design
 Group	Description
-Control (A)	Existing 5-page application
+Control (A)	Existing 5-page application,
 Treatment (B)	Simplified 3-page application
 Traffic split: 50% / 50% - each version receives 15,000 users.
 Metrics
