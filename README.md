@@ -36,12 +36,12 @@ Application Error Rate	Verify technical stability
 Data
 Primary Metric - Applications
 Version	Started Applications	Completed Applications
-A (Control)	15,000	1,800
+A (Control)	15,000	1,800,
 B (Treatment)	15,000	2,040
 Guardrail Metric - Fraud (post-investigation)
 Version	Fraudulent Applications
 A (Control)	18
-B (Treatment)	25
+B (Treatment) 25
 Raw data used for the analysis lives in `data/experiment_data.csv`.
 Analysis
 All calculations below are reproduced programmatically in `scripts/ab_test_analysis.py`.
