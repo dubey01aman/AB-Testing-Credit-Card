@@ -1,33 +1,19 @@
 A/B Testing Case Study: Optimizing Credit Card Application While Controlling Fraud
+---
 A worked example of running and analyzing an A/B test for a bank's online credit card application, balancing conversion optimization against a fraud-risk guardrail.
----
-Table of Contents
+
 Problem Statement
-Business Objective
-Experiment Design
-Metrics
-Data
-Analysis
-Completion Rate
-Hypothesis Testing
-Guardrail Metric: Fraud Rate
-Business Discussion & Decision
-Business Impact
-Repository Structure
-Reproducing the Analysis
-Key Takeaways
-License
 ---
-Problem Statement
 A leading bank observed that many customers were abandoning the online credit card application before completion.
 Analysis showed that the existing application consisted of 5 pages, requiring users to enter detailed information at multiple stages.
 The Product team proposed simplifying the application to 3 pages to improve customer experience and increase completion rates.
 The Risk team was concerned that reducing friction could make it easier for fraudulent applicants to submit applications.
+
 The bank therefore designed an A/B test with two objectives:
 Increase the application completion rate.
 Ensure fraud does not increase beyond an acceptable threshold.
 Business Objective
-> Increase completed credit card applications **without** increasing fraud risk.
+> Increase completed credit card applications without increasing fraud risk.
 Experiment Design
 Group	Description
 Control (A)	Existing 5-page application
