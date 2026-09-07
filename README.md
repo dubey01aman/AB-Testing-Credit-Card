@@ -1,6 +1,5 @@
 A/B Testing Case Study: Optimizing Credit Card Application While Controlling Fraud
 A worked example of running and analyzing an A/B test for a bank's online credit card application, balancing conversion optimization against a fraud-risk guardrail.
-
 ---
 Table of Contents
 Problem Statement
@@ -19,7 +18,6 @@ Reproducing the Analysis
 Key Takeaways
 License
 ---
-
 Problem Statement
 A leading bank observed that many customers were abandoning the online credit card application before completion.
 Analysis showed that the existing application consisted of 5 pages, requiring users to enter detailed information at multiple stages.
